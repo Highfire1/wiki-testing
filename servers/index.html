@@ -60,10 +60,6 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../characteristics/">Characteristics</a>
-                    </li>
-                </ul>
-                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../faq/">Frequently Asked Questions</a>
                     </li>
                 </ul>
@@ -76,6 +72,8 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#dedicated-servers">Dedicated Servers</a>
         <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#what-is-an-ip-and-how-do-i-find-out-what-mine-is">What is an IP and how do I find out what mine is?</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#about-running-a-dedicated-server-at-home">About Running A Dedicated Server At Home</a>
     </li>
         </ul>
@@ -589,11 +587,17 @@
 </ol>
 <p>If you want your server to be publicly available around the world, then read the following. If not, then you are done! 
 It is recommended and that you use a domain name or DNS service to mask your IP for public servers for ease of use, or even better, use a cloud service e.g. Amazon AWS or a dedicated server/VM from a hosting provider such as Linode or DigitalOcean, which is much safer. <strong>Do your research</strong>, and determine which option best fits your needs.</p>
+<h3 id="what-is-an-ip-and-how-do-i-find-out-what-mine-is">What is an IP and how do I find out what mine is?</h3>
+<p>In simplified terms, an IP address is a number that identifies your computer on the internet. You can connect to someone's Mindustry server if you know their IP address. There are two types; a <strong>public</strong> and a <strong>local</strong> address.</p>
+<ul>
+<li>For a <strong>local IP</strong>, when for example you would like to play with a friend on the same network as yours, each device has its own way of showing it. You can Google how to do it for your device, e.g. "find local ip on Mac".</li>
+<li>For a <strong>public IP</strong>, you can simply Google "what is my ip".</li>
+</ul>
 <h3 id="about-running-a-dedicated-server-at-home">About Running A Dedicated Server At Home</h3>
-<p>Most importantly, <strong>never share your public IP with the public if your hosting from your home, unless you acknowledge the implications of doing so!</strong> Your public IP is tied to your household, and if it falls into the wrong hands, it can be used to <strong>easily</strong> find your approximate location, even down to the city or block you live in. There is more that can happen; such as DoS attacks, data and information exploitation and collection, and unwanted access to other open ports in your network. <strong>Exercise caution, do your research, and use a VPN if possible.</strong></p>
+<p>Most of the time, this is what you should remember; <strong>never share your public IP with the public if you're hosting from your home, unless you acknowledge the implications of doing so!</strong> Your public IP is tied to your household, and if it falls into the wrong hands, and when put into the wrong hands, can open up your network to vulnerabilities and dangers. <strong>Exercise caution, do your research, and use a VPN or webhost if possible.</strong></p>
 <ol>
 <li>Find the make/model of your router. This is usually on a sticker on the bottom or back of the router.</li>
-<li>Use your favorite search engine to search 'port forward [your router make/model/name here]' and use the guide to foward <strong>port 6567 TCP and UDP</strong>. These instructions are different for every router, so be sure to read your guide thoroughly!</li>
+<li>Use your favorite search engine to search "port forward ASUS RT-ACRH17" and use the guide to foward <strong>port 6567 TCP and UDP</strong>. These instructions are different for every router, so be sure to read your guide thoroughly!</li>
 <li>You can use a service such as <a href="https://www.yougetsignal.com/tools/open-ports/">You Get Signal</a> to check if you have done your portforwarding correctly. </li>
 </ol>
 <h2 id="local-lan-steam-servers">Local LAN &amp; Steam Servers</h2>
