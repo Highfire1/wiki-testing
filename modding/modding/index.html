@@ -15,7 +15,7 @@
     
     
       
-        <title>Modding - Mindustry Wiki</title>
+        <title>Modding Introduction - Mindustry Wiki</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modding" class="md-skip">
+        <a href="#modding-introduction" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Modding
+              Modding Introduction
             
           </span>
         </div>
@@ -2367,6 +2367,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../markup/" class="md-nav__link">
+      Markup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -2378,12 +2390,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Modding
+        Modding Introduction
         <span class="md-nav__icon md-icon"></span>
       </label>
     
     <a href="./" class="md-nav__link md-nav__link--active">
-      Modding
+      Modding Introduction
     </a>
     
       
@@ -2470,40 +2482,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#markup" class="md-nav__link">
-    Markup
-  </a>
-  
-    <nav class="md-nav" aria-label="Markup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#built-in-colors" class="md-nav__link">
-    Built-in Colors
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#schematic" class="md-nav__link">
-    Schematic
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scripts" class="md-nav__link">
-    Scripts
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#github" class="md-nav__link">
     GitHub
   </a>
@@ -2521,6 +2499,30 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../scripting/" class="md-nav__link">
+      Scripting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../spriting/" class="md-nav__link">
+      Spriting
+    </a>
   </li>
 
         
@@ -3057,40 +3059,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#markup" class="md-nav__link">
-    Markup
-  </a>
-  
-    <nav class="md-nav" aria-label="Markup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#built-in-colors" class="md-nav__link">
-    Built-in Colors
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#schematic" class="md-nav__link">
-    Schematic
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scripts" class="md-nav__link">
-    Scripts
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#github" class="md-nav__link">
     GitHub
   </a>
@@ -3121,7 +3089,7 @@
                   </a>
                 
                 
-                <h1 id="modding">Modding</h1>
+                <h1 id="modding-introduction">Modding Introduction</h1>
 <p>Mindustry mods are simply directories of assests. There are many ways to use the modding API, depending on exactly what you want to do, and how far you're willing to go to do it.</p>
 <p>You could just resprite existing game content, you can create new game content with the simpler Json API (which is the main focus of this documentation), you can add custom sounds (or reuse existing ones). It's possible to add maps to campaign mode, and add scripts to program special behavior into your mod, like custom effects. </p>
 <p>Sharing your mod is as simple as giving someone your project directory; mods are also cross platfrom to any platform that supports them. Realistically speaking you'll want to use <a href="#github">GitHub</a>, you should also checkout the Example Mod repository on GitHub: <a href="https://github.com/Anuken/ExampleMod">https://github.com/Anuken/ExampleMod</a></p>
@@ -3215,7 +3183,6 @@ dependencies: [ ]
 <ul>
 <li><code>content/items/</code> for <a href="#item">items</a>, like <code>copper</code> and <code>surge-alloy</code>;</li>
 <li><code>content/blocks/</code> for <a href="#block">blocks</a>, like turrets and floors;</li>
-<li><code>content/mechs/</code> for <a href="#mech">mechs</a>, like <code>tau</code> and <code>glaive</code>;</li>
 <li><code>content/liquids/</code> for <a href="#liquid">liquids</a>, like <code>water</code> and <code>slag</code>;</li>
 <li><code>content/units/</code> for flying or ground <a href="#unittype">units</a>, like <code>reaper</code> and <code>dagger</code>;</li>
 <li><code>content/zones/</code> for <a href="#zone">zones</a>, configuration of campaign maps.</li>
@@ -3331,75 +3298,6 @@ block.example-mod-silver-wall.description = Стена из серебра.
 <p>$contentTypes</p>
 <p>List of filenames relative to languages:</p>
 <p>$bundles</p>
-<h2 id="markup">Markup</h2>
-<p>The text renderer uses a simple makeup language for coloring text.</p>
-<ul>
-<li><code>[name]</code> sets the color by name, there's a few <a href="#built-in-colors">built-in colors</a>;</li>
-<li><code>[#rrggbb]</code> / <code>[#rrggbbaa]</code> sets the color by hex value, with each value being anything from <code>00</code> to <code>ff</code>:<ul>
-<li><code>rr</code> is the red value,</li>
-<li><code>gg</code> is the green value,</li>
-<li><code>bb</code> is the blue value,</li>
-<li><code>aa</code> is the alpha value;</li>
-</ul>
-</li>
-<li><code>[]</code> sets the color back to the previous color;</li>
-<li><code>[[</code> escapes the left bracket, so you can write <code>[[red]</code> to write and it'll render as <code>[red]</code>.</li>
-</ul>
-<p>Notes:</p>
-<ul>
-<li>erros/unknown colors will be silently ignored.</li>
-</ul>
-<p>Example:</p>
-<pre><code>[red]red
-[#ff0000]full-red
-[#ff000066]half-red
-[#ff000033]half-half-red
-[#00ff00]green
-[]half-half-red
-</code></pre>
-<h3 id="built-in-colors">Built-in Colors</h3>
-<pre><code>[clear]clear
-[black]black
-[white]white
-[lightgray]lightgray
-[gray]gray
-[darkgray]darkgray
-[blue]blue
-[navy]navy
-[royal]royal
-[slate]slate
-[sky]sky
-[cyan]cyan
-[teal]teal
-[green]green
-[acid]acid
-[lime]lime
-[forest]forest
-[olive]olive
-[yellow]yellow
-[gold]gold
-[goldenrod]goldenrod
-[orange]orange
-[brown]brown
-[tan]tan
-[brick]brick
-[red]red
-[scarlet]scarlet
-[coral]coral
-[salmon]salmon
-[pink]pink
-[magenta]magenta
-[purple]purple
-[violet]violet
-[maroon]maroon
-</code></pre>
-<h2 id="schematic">Schematic</h2>
-<p>Fields that require the type <code>Schematic</code> can either take a built-in loadout <em>(see the <a href="#zone">Zone</a> section)</em> a base64 string, or the stem name of a <code>.msch</code> file in the <code>schematics/</code> subdirectory.</p>
-<p><em>As of now, the only purpose of schematics is to give a zone a loadout.</em></p>
-<h2 id="scripts">Scripts</h2>
-<p>Scripting in Mindustry is done with the <a href="https://github.com/mozilla/rhino">Rhino JavaScript</a> runtime. Scripts may be added to your mod by putting them in <code>scripts/</code>. Using the built-in <code>extendContent</code> function, you can extend existing Java types from JS, using <em>allowed classes</em> which are injected into your namespace.</p>
-<p>For example:</p>
-<p>//TODO</p>
 <h2 id="github">GitHub</h2>
 <p>Once you have a mod of some kind, you'll want to actually share it, and you may even want to work with other people on it, and to do that you can use <a href="https://github.com/">GitHub</a>. If you don't know what Git (or GitHub) is at all, then you should look into <a href="https://desktop.github.com/">GitHub Desktop</a>, otherwise simply use your favorite command line tool or text editor plugin. </p>
 <p>All you need understand is how to open repositories on GitHub, stage and commit changes in your local repository, and push changes to the GitHub repository. Once your project is on GitHub, there are three ways to share it:</p>
@@ -3436,7 +3334,7 @@ block.example-mod-silver-wall.description = Стена из серебра.
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../logic/Introduction/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../markup/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -3445,19 +3343,19 @@ block.example-mod-silver-wall.description = Стена из серебра.
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Introduction
+                Markup
               </div>
             </div>
           </a>
         
         
-          <a href="../types/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../scripting/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Types
+                Scripting
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
