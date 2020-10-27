@@ -128,6 +128,22 @@
      <lastmod>2020-10-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/defense/scrap-wall-gigantic/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/defense/scrap-wall-huge/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/defense/scrap-wall-large/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/defense/scrap-wall/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://mindustrygame.github.io/wiki/blocks/defense/surge-wall-large/</loc>
      <lastmod>2020-10-27</lastmod>
      <changefreq>daily</changefreq>
@@ -169,6 +185,14 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mindustrygame.github.io/wiki/blocks/distribution/inverted-sorter/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/distribution/item-source/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/distribution/item-void/</loc>
      <lastmod>2020-10-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -232,6 +256,14 @@
      <lastmod>2020-10-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/effect/illuminator/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/effect/launch-pad/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://mindustrygame.github.io/wiki/blocks/effect/mend-projector/</loc>
      <lastmod>2020-10-27</lastmod>
      <changefreq>daily</changefreq>
@@ -276,7 +308,15 @@
      <lastmod>2020-10-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/liquid/liquid-source/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://mindustrygame.github.io/wiki/blocks/liquid/liquid-tank/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/liquid/liquid-void/</loc>
      <lastmod>2020-10-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -372,6 +412,14 @@
      <lastmod>2020-10-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/power/power-source/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/power/power-void/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://mindustrygame.github.io/wiki/blocks/power/rtg-generator/</loc>
      <lastmod>2020-10-27</lastmod>
      <changefreq>daily</changefreq>
@@ -401,6 +449,18 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mindustrygame.github.io/wiki/blocks/production/blast-drill/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/production/block-forge/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/production/block-loader/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/production/block-unloader/</loc>
      <lastmod>2020-10-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -529,6 +589,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mindustrygame.github.io/wiki/blocks/units/repair-point/</loc>
+     <lastmod>2020-10-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://mindustrygame.github.io/wiki/blocks/units/resupply-point/</loc>
      <lastmod>2020-10-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
