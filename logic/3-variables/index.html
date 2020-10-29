@@ -3252,26 +3252,26 @@
 <p>Constants also hold values, but cannot be changed. Each processor has these constants and variables built-in:</p>
 <h3 id="processor">Processor</h3>
 <h4 id="this-constant-building">@this <code>constant</code> <code>Building</code></h4>
-<p>A Building Object that represents the processor itself. You can use this with <code>sensor</code> to find various properties about the processor.</p>
+<p>A <code>Building</code> Object that represents the processor itself. You can use this with <code>sensor</code> to find various properties about the processor.</p>
 <h4 id="thisx-constant-number">@thisx <code>constant</code> <code>number</code></h4>
 <p>The x coordinate of the processor.</p>
 <h4 id="thisy-constant-number">@thisy <code>constant</code> <code>number</code></h4>
 <p>The y coordinate of the processor.</p>
 <h4 id="counter-variable-number">@counter <code>variable</code> <code>number</code></h4>
 <p>A variable that represents the next line the processor will read code from, equivalent to <code>%IP</code> in x86. It can be changed like any other variable as another way to perform jumps.</p>
-<p>An (advanced) example of setting <code>@ipt</code> to jump to a function, then jump back to the caller:</p>
+<p>An (advanced) example of setting <code>@counter</code> to jump to a function, then jump back to the caller:</p>
 <pre><code>op add retAddr @counter 1 # Save where we will continue after the function returns by adding 1 to the counter
 set @counter myFunc       # Jump to the line representing myFunc
 ...
 set @counter retAddr      # Return to the line set earlier after the function is called
 </code></pre>
 <h3 id="links">Links</h3>
-<p><em>For details on Links and Linking, refer to the Glossary.</em></p>
 <h4 id="links-constant-number">@links <code>constant</code> <code>number</code></h4>
-<p>A constant that equals the number of buildnigs linked to the processor. It is changed by the processor when blocks are linked or unlinked.</p>
+<p>A constant that equals the number of buildings linked to the processor. It is changed by the processor when blocks are linked or unlinked.</p>
 <p>You can use this along with <code>getlink</code> to loop through all linked buildings, like so:</p>
 <pre><code>set linkIter 0                  # Create iterator variable
 getlink block linkIter          # Get Building Object of the &quot;linkIter&quot;th linked building.
+# Do what you want with the building here
 jump 1 lessThan linkIter @links # Loop
 </code></pre>
 <h4 id="constant-building"><buidingName><n> <code>constant</code> <code>Building</code></h4>
