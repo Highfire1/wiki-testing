@@ -3130,8 +3130,9 @@
 <h2 id="data-types">Data Types</h2>
 <p>There are two main datatypes in Mindustry; numbers and Objects.</p>
 <h3 id="number">number</h3>
-<p>A number. Can be nagative or positive, have decimals or not, and can represent true (anything above 0) or false (0) values. Null is also represented as 0.</p>
+<p>A decimal number. Can be nagative or positive, and can represent true (anything not equal to 0) or false (0) values. Null is also represented as 0.</p>
 <p>Some instructions can only accept whole numbers, so it is indicated accordingly in this manual.</p>
+<p>Internally, numbers are stored as 64-bit floating point values (<code>double</code>), and operated upon as 64-bit signed integers (<code>long</code>) when bitshifting is involved.</p>
 <h3 id="string">String</h3>
 <p>An Object that represents text enclosed in quotes, e.g. <code>"hello mindustry"</code></p>
 <h3 id="building">Building</h3>
