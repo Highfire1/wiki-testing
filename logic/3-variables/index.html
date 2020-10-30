@@ -3231,15 +3231,13 @@
 <p>However, we have another variable in the example called <code>playerUnit</code>. That variable is a <strong>parameter</strong>. A parameter is an input value to an instruction. In this case, we probably got <code>playerUnit</code> from the <code>radar</code> instruction. If a parameter is not provided or is invalid, the instruction will not execute.</p>
 <h3 id="data-types-and-implicit-conversion">Data Types and Implicit Conversion</h3>
 <p>The values in variables, of course, have different types that are specific to different sources and purposes, such as <code>Unit</code> for Units, <code>number</code> for any number, etc. You can find a list of all of them in the Glossary.</p>
-<p>Mindustry Logic also has this thing with variables called <strong>Implicit Conversion</strong>. That means that, if needed, it will convert a variable's value from one type to another. Here are the rules it goes by:</p>
-<ul>
-<li>given <code>number</code> such as listed above but needs <code>Object</code>, convert to <code>null</code></li>
-<li>given <code>Object</code> such as listed above but needs <code>number</code>, convert to <code>0</code> if <code>null</code>, otherwise <code>1</code></li>
-</ul>
+<p>Mindustry Logic also has this thing with variables called <strong>Implicit Conversion</strong>. That means that, if needed, it will convert a variable's value from one type to another.</p>
+<p>If an instruction is given a <code>number</code>, but it needs an <code>Object</code>, it will be converted to <code>null</code>. If an instruction needs a <code>number</code>, but is given an <code>Object</code>, it will be converted to 1 if the object isn't <code>null</code>, otherwise 0.</p>
 <p>Examples:</p>
 <ul>
 <li><code>53</code> -&gt; <code>null</code></li>
-<li><code>null</code> -&gt; 0, <code>Object</code> which is a Silicon Crucible -&gt; 1</li>
+<li><code>null</code> -&gt; 0,</li>
+<li><code>Object</code> which is a Silicon Crucible -&gt; 1</li>
 </ul>
 <p>The <code>print</code> instruction is the only instruction that requires a <code>String</code> as an input, so its rules are stated in its own part of the manual.</p>
 <h3 id="variable-naming">Variable Naming</h3>
@@ -3247,7 +3245,7 @@
 <p>Variable names can contain any typeable character. However, they cannot be purely numbers, since it will instead use the actual number.</p>
 <p>The usual naming convention among the majority of mlog code is camelCase, an example of which is itself. Examples of variables named using camelCase are: <code>playerX</code>, <code>coreFound</code>, <code>vertexAngle</code>. </p>
 <p><strong>When naming variables, make sure they are descriptive yet short.</strong> They must describe the value they hold or their purpose. At the same time, they shouldn't be complete sentences or span the entire page, or be too short that they get confusing. You can use abbreviations, acronyms, or shorter terms to make them more concise.</p>
-<p>Everybody has their own specific styles and preferences, but try to learn from good examples of code in mlog and other languages, while at the same time staying close to the popular style.</p>
+<p>Everybody has their own specific styles and preferences, but try to learn from good examples of code in mlog and other languages, while at the same time staying close to the common style.</p>
 <h2 id="processor-variables-and-constants">Processor Variables and Constants</h2>
 <p>Constants also hold values, but cannot be changed. Each processor has these constants and variables built-in:</p>
 <h3 id="processor">Processor</h3>
